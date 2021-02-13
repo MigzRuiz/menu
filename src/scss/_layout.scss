@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 8vh 1fr 1fr;
+
+  .nav {
+    border: 3px solid black;
+    border-bottom: none;
+  }
+  .header {
+    border: 3px solid black;
+
+    border-bottom: none;
+  }
+  .menu {
+    border: 3px solid black;
+  }
+}

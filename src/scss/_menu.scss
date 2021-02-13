@@ -1,0 +1,68 @@
+.menu {
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+
+  &__container {
+    padding: 2rem;
+    padding-right: 8rem;
+    border-left: 3px solid black;
+
+    display: flex;
+    flex-direction: column;
+
+    &--1 {
+      border-left: none;
+    }
+  }
+
+  &__box {
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__order {
+    grid-row: 1/2;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--1 {
+      border-left: none;
+    }
+  }
+
+  &__categories {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__category {
+    border: 2.5px solid black;
+    width: max-content;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+    &--meat {
+      background-color: $color-red;
+    }
+    &--drink {
+      background-color: $color-yellow;
+    }
+    &--fish {
+      background-color: $color-blue;
+    }
+    &--chicken {
+      background-color: $color-teal;
+    }
+  }
+}
