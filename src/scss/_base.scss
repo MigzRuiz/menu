@@ -3,6 +3,14 @@ $color-red: #f8bcbb;
 $color-yellow: #ffda4f;
 $color-blue: #d5e5fb;
 $color-teal: #f9f9ee;
+$color-gray-light: #b8b8b8;
+$color-gray-dark: #a5a5a5;
+
+//media queries
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
 
 * {
   padding: 0;
@@ -17,7 +25,23 @@ $color-teal: #f9f9ee;
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.25%
+
+  @include respond(tab-land) {
+    font-size: 50.5%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 40%;
+  }
+
+  // @include respond(phone) {
+  //   font-size: 50%;
+  // }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {

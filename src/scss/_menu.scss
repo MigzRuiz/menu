@@ -17,7 +17,7 @@
   }
 
   &__box {
-    height: 150%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,7 +40,7 @@
   }
 
   &__categories {
-    height: 30%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,5 +64,30 @@
     &--chicken {
       background-color: $color-teal;
     }
+  }
+
+  &__served {
+    //font-size: 1.6rem;
+    color: $color-gray-light;
+  }
+
+  &__description {
+    // font-size: 1.6rem;
+    color: $color-gray-dark;
+    height: 20%;
+    overflow: hidden;
+  }
+
+  &__servings {
+    margin-top: 1rem;
+    border: 2.5px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    width: max-content;
+    color: black;
+  }
+
+  &__title {
+    // font-size: 3rem;
   }
 }
